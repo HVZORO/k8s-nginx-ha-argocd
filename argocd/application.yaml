@@ -1,0 +1,24 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+
+metadata:
+  name: nginx-app
+  namespace: argocd
+
+spec:
+  project: default
+
+  source:
+    repoURL: https://github.com/YOUR-USERNAME/k8s-nginx-ha-argocd
+    targetRevision: HEAD
+    path: app
+
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: web-app
+
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+
