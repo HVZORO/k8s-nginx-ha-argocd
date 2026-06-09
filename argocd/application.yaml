@@ -9,7 +9,7 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/YOUR-USERNAME/k8s-nginx-ha-argocd
+    repoURL: https://github.com/HVZORO/k8s-nginx-ha-argocd.git
     targetRevision: HEAD
     path: app
 
