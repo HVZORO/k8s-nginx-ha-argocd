@@ -8,5 +8,3 @@ data:
   index.html: |
     <h1>ArgoCD Deployed App</h1>
     <p>GitOps in action</p>
-Purpose:
-Stores HTML page.
